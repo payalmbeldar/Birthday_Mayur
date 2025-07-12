@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  background: #379baf;
+  font-family: cursive;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.page {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.page.active {
+  display: block;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #d6336c;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: #ff66a1;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.emoji {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.message-photo {
+  width: 250px;
+  border: 5px solid #ff66a1;
+  box-shadow: 0 0 20px #ff66a1;
+}
+
+.carousel img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+.controls button {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+.sparkles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/XZ5V.gif');
+  background-size: cover;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.balloons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/balloons.gif');
+  background-size: cover;
+  opacity: 0.5;
+  display: none;
+}
+
+.cake-box {
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+
+.cake-full,
+.cake-cut {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.knife {
+  width: 10px;
+  height: 60px;
+  background: silver;
+  position: absolute;
+  top: 10px;
+  left: 130px;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.scratch-container {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.scratch-img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+canvas#scratchCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+button#nextBtn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background: #ff66a1;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
